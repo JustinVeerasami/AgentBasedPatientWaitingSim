@@ -55,7 +55,7 @@ choose different prioritizations of patient admissions based on their
 - disease acuity
 - educational value
 
-### Reference Papers
+## Reference Papers
 1.	Emergency departments for reducing patient waiting times. PLoS One. Jul 2 2009;4(7):e6127. doi:10.1371/journal.pone.0006127
 2.	Kim J-K. Enhancing Patient Flow in Emergency Departments: A Machine Learning and Simulation-Based Resource Scheduling Approach. Applied Sciences. 2024;14(10)doi:10.3390/app14104264
 
