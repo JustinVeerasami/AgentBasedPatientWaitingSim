@@ -68,11 +68,11 @@ Steps to run the simulation:
     cd AgentBasedPatientWaitingSim
     ```
 
-3. Install the required dependencies using pip:
+3. (WIP) Install the required dependencies using pip:
     ```bash
     pip install -r requirements.txt
     ```
-## Run The Simulation (defaults to indefinite animation)
+## Run The Simulation
 ```bash
 python main.py
 ```
