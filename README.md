@@ -49,7 +49,7 @@ The hospital team capacity is the environment.
   - learning outcomes, which change with the agents they encounter
   
 ## Simulation
-choose different prioritizations of patient admissions based on their 
+Choose different prioritizations of patient admissions based on their 
 - type
 - waiting time
 - disease acuity
