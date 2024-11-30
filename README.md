@@ -55,6 +55,29 @@ Choose different prioritizations of patient admissions based on their
 - disease acuity
 - educational value
 
+## Installation
+Steps to run the simulation:
+
+1. Clone the github repository:
+    ```bash
+    git clone -b main https://github.com/JustinVeerasami/AgentBasedPatientWaitingSim.git
+    ```
+
+2. Navigate to the project directory:
+    ```bash
+    cd AgentBasedPatientWaitingSim
+    ```
+
+3. Install the required dependencies using pip:
+    ```bash
+    pip install -r requirements.txt
+    ```
+## Run The Simulation (defaults to indefinite animation)
+```bash
+python main.py
+```
+
+
 ## Reference Papers
 1.	Emergency departments for reducing patient waiting times. PLoS One. Jul 2 2009;4(7):e6127. doi:10.1371/journal.pone.0006127
 2.	Kim J-K. Enhancing Patient Flow in Emergency Departments: A Machine Learning and Simulation-Based Resource Scheduling Approach. Applied Sciences. 2024;14(10)doi:10.3390/app14104264
