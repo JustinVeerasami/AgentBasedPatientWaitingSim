@@ -48,7 +48,7 @@ The hospital team capacity is the environment.
   - efficiency for discharge
   - learning outcomes, which change with the agents they encounter
   
-## Simulation: 
+## Simulation
 choose different prioritizations of patient admissions based on their 
 - type
 - waiting time
