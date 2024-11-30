@@ -2,23 +2,33 @@
 Agent-Based Modeling of Patient Waiting for Hospitalization and Different Prioritization Strategies
 
 ## Background and introduction
-- Patients evaluated in the emergency department (ER) or during outpatient
-visits (OPD) may need admission for further treatment. The waiting time 
-for a hospital bed varies based on patient acuity, bed availability, and 
-hospital capacity.
-- Hospital admission notifications can be prioritized differently, such as 
-prioritizing emergency patients, those waiting longer, or reserving beds 
-for educational purposes. Different strategies affect patient mortality rate,
+Patients evaluated in the emergency department (ER) or during outpatient
+visits (OPD) may need admission for further treatments. The waiting time 
+for a hospital bed varies based on:
+
+- patient acuity
+- bed availability
+- hospital capacity
+
+Hospital admission notifications can be prioritized differently, such as:
+- prioritizing emergency patients
+- patient waiting time
+- reserving beds for educational purposes
+
+Different strategies affect patient mortality rate,
 waiting times and resident physician learning outcomes.
 
-## Objective
-- This study aims to simulate the effects of different admission notification 
-strategies on patient mortality rates, waiting times, and physician learning
-outcomes with agent-based modeling.
+## Objectives
+This study aims to simulate the effects of different admission notification 
+strategies with agent-based modeling on:
+- patient mortality rates
+- waiting times
+- physician learning outcomes
 
-Goal: Find the best admission notification strategy to reduce patient mortality rates, waiting times, and improve physician learning outcomes.
+### Goal
+Find the best admission notification strategy to reduce patient mortality rates, waiting times, and improve physician learning outcomes.
 
-## Methodology
+# Methodology
 Each patient is an agent.
 - There are 2 different types of agents: from the ER or from the OPD.
 - The properties of each agent include mortality rate, recovery rate, waiting time, educational value, and probability of being discharged tomorrow.
