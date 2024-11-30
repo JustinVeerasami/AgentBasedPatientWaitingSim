@@ -28,4 +28,8 @@ The hospital team capacity is the environment.
 - The properties of each medical team include capacity for patients, efficiency for discharge, and learning outcomes, which change with the agents they encounter.
 Simulation: choose different prioritizations of patient admissions based on their type, waiting time, disease acuity, and educational value.
 
+### Reference Papers
+1.	Emergency departments for reducing patient waiting times. PLoS One. Jul 2 2009;4(7):e6127. doi:10.1371/journal.pone.0006127
+2.	Kim J-K. Enhancing Patient Flow in Emergency Departments: A Machine Learning and Simulation-Based Resource Scheduling Approach. Applied Sciences. 2024;14(10)doi:10.3390/app14104264
+
 
