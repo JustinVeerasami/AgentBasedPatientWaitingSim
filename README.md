@@ -1,4 +1,4 @@
-# AgentBasedPatientWaitingSim
+# Agent Based Patient Waiting Simulation
 Agent-Based Modeling of Patient Waiting for Hospitalization and Different Prioritization Strategies
 
 ## Background and introduction
