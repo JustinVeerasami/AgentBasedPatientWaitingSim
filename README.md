@@ -29,7 +29,7 @@ strategies with agent-based modeling on:
 Find the best admission notification strategy to reduce patient mortality rates, waiting times, and improve physician learning outcomes.
 
 # Methodology
-Each patient is an agent.
+### Each patient is an agent.
 - There are 2 different types of agents:
   - from the ER
   - from the OPD.
@@ -41,7 +41,7 @@ Each patient is an agent.
   - probability of being discharged tomorrow.
 - Each property is generated with different initial value distributions based on the type of agent, and these properties may change over time and with the environment.
   
-The hospital team capacity is the environment.
+### The hospital team capacity is the environment
 - There are 3 medical teams in the inpatient ward.
 - The properties of each medical team include
   - capacity for patients
