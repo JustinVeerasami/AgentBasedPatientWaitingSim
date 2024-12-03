@@ -3,10 +3,10 @@ import numpy as np
 
 class Patient:
     def __init__(self, template):
-        self.mortality_rate = template['mortality_rate'] + np.random.normal(0, template.get('mortality_std', 0))
-        self.waiting_time = 0
-        self.recovery_rate = template['recovery_rate'] + np.random.normal(0, template.get('recovery_std', 0))
+        self.mortality_rate = np.clip(template['mortality_rate'] + np.random.normal(0, template.get('mortality_std', 0)), 0.05, 0.95)
+        self.recovery_rate = np.clip(template['recovery_rate'] + np.random.normal(0, template.get('recovery_std', 0)), 0.05, 0.95)
         self.category = np.random.choice(template['category'])
+        self.waiting_time = 0
 
     @staticmethod
     def generate_patients(templates, num_patients):
