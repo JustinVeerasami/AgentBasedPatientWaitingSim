@@ -1,0 +1,45 @@
+import random
+import numpy as np
+
+class Patient:
+    def __init__(self, template):
+        self.mortality_rate = template['mortality_rate'] + np.random.normal(0, template.get('mortality_std', 0))
+        self.waiting_time = 0
+        self.recovery_rate = template['recovery_rate'] + np.random.normal(0, template.get('recovery_std', 0))
+        self.category = np.random.choice(template['category'])
+
+    @staticmethod
+    def generate_patients(templates, num_patients):
+        patients = []
+        for _ in range(num_patients):
+            random_template = random.choice(templates)
+            patient = Patient(random_template)
+            patients.append(patient)
+        return patients
+
+template_disease = {
+    'mortality_rate': 0.4,
+    'mortality_std': 0.3,
+    'recovery_rate': 0.4,
+    'recovery_std': 0.3,
+    'category': [1]
+}
+
+template_survey = {
+    'mortality_rate': 0.1,
+    'mortality_std': 0.05,
+    'recovery_rate': 0.7,
+    'recovery_std': 0.1,
+    'category': [2, 3, 4, 5]
+}
+
+templates = [template_disease, template_survey]
+patients = Patient.generate_patients(templates, 10)
+
+for i, patient in enumerate(patients, start=1):
+    print(f"Patient {i}:")
+    print(f"  Mortality Rate: {patient.mortality_rate}")
+    print(f"  Waiting Time: {patient.waiting_time}")
+    print(f"  Recovery Rate: {patient.recovery_rate}")
+    print(f"  Category: {patient.category}")
+    print()
