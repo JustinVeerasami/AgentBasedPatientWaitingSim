@@ -2,12 +2,18 @@
 
 ## Simulation Shape:
 An hourglass like figure will be used with 2 bottlenecks introduced in the simulation
-- Bottleneck 1: Patient Admission
-- Bottleneck 2: The Discharge Process
+- Bottleneck 1: Patient Admission funnels into bottleneck 2 as it empties.
+- Bottleneck 2: The Hospital Ward
 
 ## Behavior
-The patients will navigate these environments where ER and OPD patients will be used as agent templates
-- The parameters will be drawn from a distribution set for their templates to add variability to behavior
+The patients will navigate these environments where patients will be used as agent templates
+- The parameters will be drawn from a normal distribution set for their templates to add variability to behavior
+
+### Patient Parameters
+- mortality
+- waiting_time
+- discharge_probability
+- category
  
 ### Mortality
 - This behavior will be a simple variable assigned with a fixed value with variability applied via a random choice amongst a normal distribution of the said variable
@@ -16,8 +22,10 @@ The patients will navigate these environments where ER and OPD patients will be 
   
 - The mortality rate will change dependant on variables of:
   - number of patients under a physician agents service (inverse relationship)
-  - these changes occur only in the circumstance of there being bed availability which is set as an absolute threshold of the model for admission
+  - The waiting time outside of admission (positive relationship)
 
 ### Discharge
-Occurs when mortality value is below a chosen threshold
+- Patients will have a default rate of 0.5 upon entering the hospital, as they stay in the hospital this rate will go up by 0.1 (+/-) a chosen normal distribution to add variability
+- This discharge rate could change in relation to the patient category
+ - patients with a rare condition for example could have a slower discharge progression due to unfamiliarity
 
