@@ -1,7 +1,9 @@
 # Agent Based Patient Waiting Simulation
 Agent-Based Modeling of Patient Waiting for Hospitalization and Different Prioritization Strategies
 
-![Patient_Waiting_gif-ezgif com-crop (1)](https://github.com/user-attachments/assets/cf13303a-99e3-4d5e-bab7-c686df352b03)
+<div align="center">
+  <img src="https://github.com/user-attachments/assets/cf13303a-99e3-4d5e-bab7-c686df352b03" alt="Patient_Waiting_gif-ezgif com-crop (1)">
+</div>
 
 
 ## Background and introduction
