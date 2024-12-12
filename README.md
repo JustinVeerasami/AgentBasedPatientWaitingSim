@@ -1,6 +1,10 @@
 # Agent Based Patient Waiting Simulation
 Agent-Based Modeling of Patient Waiting for Hospitalization and Different Prioritization Strategies
 
+![Patient_Waiting_gif](https://github.com/user-attachments/assets/18bd88e4-83d4-454d-88ae-c547e0c2f988)
+
+
+
 ## Background and introduction
 Patients evaluated in the emergency department (ER) or during outpatient
 visits (OPD) may need admission for further treatments. The waiting time 
